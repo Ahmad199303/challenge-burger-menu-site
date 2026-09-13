@@ -208,7 +208,7 @@ header{
   border:1px solid var(--line);
   border-radius:16px;
   padding:1.3rem 1.4rem;
-  display:flex;justify-content:space-between;gap:1rem;align-items:flex-start;
+  display:flex;justify-content:space-between;gap:2rem;align-items:flex-start;
   transition:.25s;position:relative;overflow:hidden;
 }
 .menu-item::before{
@@ -218,9 +218,10 @@ header{
 }
 .menu-item:hover{transform:translateY(-4px);border-color:rgba(232,94,58,.4);box-shadow:var(--shadow);}
 .menu-item:hover::before{opacity:1;}
+.menu-item .info{flex:1;min-width:0;}
 .menu-item .info h4{font-size:1.05rem;color:var(--cream);margin-bottom:.35rem;}
 .menu-item .info p{color:var(--cream-dim);font-size:.85rem;}
-.menu-item .prices{display:flex;flex-direction:column;gap:.3rem;flex:none;text-align:end;}
+.menu-item .prices{display:flex;flex-direction:column;gap:.3rem;flex:none;text-align:end;margin-inline-start:.5rem;}
 .price-pill{
   font-weight:800;color:var(--brand-light);font-size:1rem;white-space:nowrap;
 }
