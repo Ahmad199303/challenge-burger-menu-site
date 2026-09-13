@@ -117,11 +117,6 @@ header{
   pointer-events:none;
 }
 .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center;}
-.hero-badge{
-  position:absolute;top:120px;inset-inline-end:6%;
-  width:150px;height:150px;opacity:.9;
-  animation:spin 18s linear infinite;
-}
 @keyframes spin{to{transform:rotate(360deg);}}
 .hero h1{
   font-size:clamp(2.6rem,5.5vw,4.3rem);
@@ -140,23 +135,28 @@ header{
 .hero-stats div span{color:var(--cream-dim);font-size:.9rem;}
 .hero-visual{
   position:relative;
-  aspect-ratio:1/1;
   display:flex;align-items:center;justify-content:center;
+  padding:2.5rem 0;
 }
 .hero-visual .ring{
-  position:absolute;inset:0;
+  position:absolute;
+  width:min(400px,88%);aspect-ratio:1/1;
   border:2px dashed rgba(232,94,58,.4);
   border-radius:50%;
   animation:spin 40s linear infinite;
+  pointer-events:none;
 }
-.hero-visual .logo-plate{
-  width:78%;aspect-ratio:1/1;border-radius:50%;
-  background:radial-gradient(circle at 30% 30%,#ff8a5c,#c8471f 70%);
-  box-shadow:var(--shadow), inset 0 0 0 10px rgba(253,243,231,.08);
-  display:flex;align-items:center;justify-content:center;
-  padding:6%;
+.hero-game{
+  position:relative;z-index:1;
+  width:min(360px,92%);
+  display:flex;flex-direction:column;gap:.9rem;
+  background:radial-gradient(circle at 30% 15%,rgba(255,138,92,.18),transparent 60%),var(--panel);
+  border:1px solid var(--line);
+  border-radius:26px;
+  padding:1.4rem;
+  box-shadow:var(--shadow);
 }
-.hero-visual .logo-plate img{border-radius:50%;width:100%;height:100%;object-fit:cover;}
+.hero-game-title{text-align:center;font-weight:800;color:var(--cream);font-size:1.02rem;}
 .scroll-cue{
   position:absolute;bottom:28px;left:50%;transform:translateX(-50%);
   color:var(--cream-dim);font-size:.8rem;display:flex;flex-direction:column;align-items:center;gap:.4rem;
@@ -181,36 +181,25 @@ header{
 .promise-item p{color:var(--cream-dim);font-size:.92rem;}
 
 /* ---------- menu ---------- */
-/* ---------- game ---------- */
-.game{
-  background:
-    radial-gradient(circle at 15% 20%,rgba(232,94,58,.18),transparent 45%),
-    radial-gradient(circle at 85% 80%,rgba(242,183,5,.12),transparent 40%),
-    var(--ink-2);
-  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
-}
-.game-wrap{max-width:760px;margin:0 auto;}
-.game-hud{
-  display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;
-  margin-bottom:1.6rem;
-}
+/* ---------- hero mini game ---------- */
+.hero-game-hud{display:flex;align-items:center;justify-content:center;gap:.7rem;}
 .hud-chip{
-  background:var(--panel);border:1px solid var(--line);border-radius:100px;
-  padding:.65rem 1.3rem;font-weight:700;color:var(--cream-dim);font-size:.95rem;
+  background:rgba(0,0,0,.25);border:1px solid var(--line);border-radius:100px;
+  padding:.5rem 1.1rem;font-weight:700;color:var(--cream-dim);font-size:.9rem;
 }
-.hud-chip strong{color:var(--brand-light);font-size:1.05rem;}
+.hud-chip strong{color:var(--brand-light);font-size:1rem;}
 .game-board{
   position:relative;
-  height:380px;
-  border-radius:var(--radius);
+  height:230px;
+  border-radius:18px;
   border:2px dashed rgba(232,94,58,.35);
   background:rgba(0,0,0,.2);
   overflow:hidden;
   display:flex;align-items:center;justify-content:center;
 }
-.game-hint{color:var(--cream-dim);font-weight:600;text-align:center;padding:0 1rem;}
+.game-hint{color:var(--cream-dim);font-weight:600;text-align:center;padding:0 1rem;font-size:.9rem;}
 .mole{
-  position:absolute;width:66px;height:66px;border-radius:50%;
+  position:absolute;width:54px;height:54px;border-radius:50%;
   padding:0;border:none;cursor:pointer;background:transparent;
   transform:translate(-50%,-50%) scale(0);
   animation:mole-pop .22s ease forwards;
@@ -220,7 +209,6 @@ header{
 .mole.hit{animation:mole-hit .25s ease forwards;pointer-events:none;}
 @keyframes mole-pop{to{transform:translate(-50%,-50%) scale(1);}}
 @keyframes mole-hit{to{transform:translate(-50%,-50%) scale(1.6);opacity:0;}}
-@media (max-width:600px){.game-board{height:320px;}.mole{width:54px;height:54px;}}
 
 .game-result{
   position:fixed;inset:0;background:rgba(10,6,5,.85);
@@ -366,7 +354,6 @@ footer li{margin-bottom:.6rem;display:flex;gap:.5rem;}
   .hero-actions{justify-content:center;}
   .hero-stats{justify-content:center;}
   .hero-visual{max-width:340px;margin-inline:auto;}
-  .hero-badge{display:none;}
   .promise .container{grid-template-columns:1fr;}
   .branch-grid{grid-template-columns:1fr;}
   .footer-grid{grid-template-columns:1fr;}
