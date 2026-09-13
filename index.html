@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Challenge Burger | تشالنج برجر</title>
+<meta name="description" content="Challenge Burger - سمبل. تيستي. فريش. برجر لحم ودجاج طازج، فروعنا في شارع المدينة المنورة وشارع مكة، عمّان.">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="container nav">
+    <a href="#home" class="brand">
+      <img src="assets/logo.jpg" alt="شعار Challenge Burger">
+      <span>CHALLENGE<br>BURGER</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">الرئيسية</a></li>
+      <li><a href="#menu">المنيو</a></li>
+      <li><a href="#branches">الفروع</a></li>
+      <li><a href="#contact">تواصل معنا</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#branches" class="btn btn-outline">أقرب فرع</a>
+      <button class="burger-toggle" id="burgerToggle" aria-label="القائمة">☰</button>
+    </div>
+  </nav>
+</header>
+
+<div class="checker"></div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <img src="assets/logo.jpg" class="hero-badge" alt="">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">SIMPLE · TASTY · FRESH</div>
+      <h1>الطعم يستاهل <em>التحدي</em></h1>
+      <p class="lead">
+        Challenge Burger — برجر لحم ودجاج طازج يُحضّر يومياً بمكونات مختارة بعناية.
+        وصفات جريئة، نكهات نار، وخدمة سريعة في فروعنا بعمّان.
+      </p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">شاهد المنيو 🍔</a>
+        <a href="#branches" class="btn btn-outline">فروعنا 📍</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>2</strong><span>فروع في عمّان</span></div>
+        <div><strong>+20</strong><span>صنف برجر</span></div>
+        <div><strong>100%</strong><span>طازج يومياً</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="ring"></div>
+      <div class="logo-plate"><img src="assets/logo.jpg" alt="Challenge Burger"></div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span>مرّر لتكتشف المزيد</span><span class="dot"></span></div>
+</section>
+
+<!-- PROMISE STRIP -->
+<section class="promise">
+  <div class="container">
+    <div class="promise-item">
+      <div class="ic">🥩</div>
+      <div><h3>لحم طازج يومياً</h3><p>قطع لحم مختارة تُشوى فور الطلب لضمان أفضل نكهة.</p></div>
+    </div>
+    <div class="promise-item">
+      <div class="ic">🔥</div>
+      <div><h3>وصفات مميزة</h3><p>من الكلاسيكي للدايناميت والترافل، تشكيلة تناسب كل الأذواق.</p></div>
+    </div>
+    <div class="promise-item">
+      <div class="ic">⚡</div>
+      <div><h3>خدمة سريعة</h3><p>طلبك جاهز بأسرع وقت دون التنازل عن الجودة.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="menu" id="menu">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">MENU</div>
+      <h2>منيو تشالنج برجر</h2>
+      <p>كل الأصناف والأسعار بالدينار الأردني (JD)</p>
+    </div>
+
+    <div class="menu-tabs">
+      <button class="menu-tab active" data-tab="beef">🥩 برجر اللحم</button>
+      <button class="menu-tab" data-tab="chicken">🍗 برجر الدجاج</button>
+      <button class="menu-tab" data-tab="sides">🍟 مقبلات ومشروبات</button>
+    </div>
+
+    <!-- BEEF -->
+    <div class="menu-panel active" id="panel-beef">
+      <div class="menu-group">
+        <div class="menu-group-head"><h3>Classic Cheese Burger</h3><span>كلاسيك تشيز برجر</span></div>
+        <div class="menu-items">
+          <div class="menu-item"><div class="info"><h4>Classic Cheese Burger</h4><p>خبز عادي</p></div>
+            <div class="prices"><span class="price-pill"><small>Single</small>1.90 JD</span><span class="price-pill"><small>Double</small>2.90 JD</span><span class="price-pill"><small>Triple</small>3.90 JD</span></div></div>
+          <div class="menu-item"><div class="info"><h4>Classic Cheese Burger</h4><p>Toast Bread — خبز توست</p></div>
+            <div class="prices"><span class="price-pill"><small>Single</small>2.10 JD</span><span class="price-pill"><small>Double</small>3.10 JD</span></div></div>
+          <div class="menu-item"><div class="info"><h4>Classic Cheese Burger</h4><p>حبة القمح الكاملة</p></div>
+            <div class="prices"><span class="price-pill"><small>Single</small>2.70 JD</span><span class="price-pill"><small>Double</small>3.70 JD</span><span class="price-pill"><small>Triple</small>4.70 JD</span></div></div>
+        </div>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-group-head"><h3>Truffle Mushroom</h3><span>ترافل مشروم</span></div>
+        <div class="menu-items">
+          <div class="menu-item"><div class="info"><h4>Truffle Mushroom Burger</h4><p>صلصة الترافل والمشروم</p></div>
+            <div class="prices"><span class="price-pill"><small>Single</small>3.50 JD</span><span class="price-pill"><small>Double</small>4.50 JD</span><span class="price-pill"><small>Triple</small>5.50 JD</span></div></div>
+        </div>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-group-head"><h3>Dynamite Cheeseburger</h3><span>دايناميت تشيز برجر</span></div>
+        <div class="menu-items">
+          <div class="menu-item"><div class="info"><h4>Dynamite Cheeseburger</h4><p>صلصة الدايناميت الحارة</p></div>
+            <div class="prices"><span class="price-pill"><small>Single</small>3.50 JD</span><span class="price-pill"><small>Double</small>4.50 JD</span><span class="price-pill"><small>Triple</small>5.50 JD</span></div></div>
+        </div>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-group-head"><h3>Hot Mayonnaise Cheeseburger</h3><span>هوت مايونيز تشيز برجر</span></div>
+        <div class="menu-items">
+          <div class="menu-item"><div class="info"><h4>Hot Mayonnaise Cheeseburger</h4><p>مايونيز حار مميز</p></div>
+            <div class="prices"><span class="price-pill"><small>Single</small>2.10 JD</span><span class="price-pill"><small>Double</small>3.10 JD</span><span class="price-pill"><small>Triple</small>4.10 JD</span></div></div>
+        </div>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-group-head"><h3>Hi Guys & Cowboy Cheeseburgers</h3><span>هاي جايز وكاوبوي تشيز برجر</span></div>
+        <div class="menu-items">
+          <div class="menu-item"><div class="info"><h4>Hi Guys & Cowboy Cheeseburgers</h4><p>ثنائي مميز بنكهتين</p></div>
+            <div class="prices"><span class="price-pill"><small>Single</small>3.50 JD</span><span class="price-pill"><small>Double</small>4.50 JD</span><span class="price-pill"><small>Triple</small>5.50 JD</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHICKEN -->
+    <div class="menu-panel" id="panel-chicken">
+      <div class="menu-group">
+        <div class="menu-group-head"><h3>Classic Cheese Burger</h3><span>كلاسيك تشيز برجر دجاج</span></div>
+        <div class="menu-items">
+          <div class="menu-item"><div class="info"><h4>Classic Cheese Burger</h4><p>خبز عادي</p></div>
+            <div class="prices"><span class="price-pill"><small>Single</small>1.25 JD</span><span class="price-pill"><small>Double</small>2.25 JD</span><span class="price-pill"><small>Triple</small>3.25 JD</span></div></div>
+          <div class="menu-item"><div class="info"><h4>Classic Cheese Burger</h4><p>Toast Bread — خبز توست</p></div>
+            <div class="prices"><span class="price-pill"><small>Single</small>1.25 JD</span><span class="price-pill"><small>Double</small>2.25 JD</span></div></div>
+        </div>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-group-head"><h3>Truffle Mushroom</h3><span>ترافل مشروم دجاج</span></div>
+        <div class="menu-items">
+          <div class="menu-item"><div class="info"><h4>Truffle Mushroom Burger</h4><p>صلصة الترافل والمشروم</p></div>
+            <div class="prices"><span class="price-pill"><small>Single</small>2.50 JD</span><span class="price-pill"><small>Double</small>3.50 JD</span><span class="price-pill"><small>Triple</small>4.50 JD</span></div></div>
+        </div>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-group-head"><h3>Dynamite Cheeseburger</h3><span>دايناميت تشيز برجر دجاج</span></div>
+        <div class="menu-items">
+          <div class="menu-item"><div class="info"><h4>Dynamite Cheeseburger</h4><p>صلصة الدايناميت الحارة</p></div>
+            <div class="prices"><span class="price-pill"><small>Single</small>2.50 JD</span><span class="price-pill"><small>Double</small>3.50 JD</span><span class="price-pill"><small>Triple</small>4.50 JD</span></div></div>
+        </div>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-group-head"><h3>Let's Go Burger</h3><span>ليتس جو برجر</span></div>
+        <div class="menu-items">
+          <div class="menu-item"><div class="info"><h4>Let's Go Burger</h4><p>خس، طماطم، صلصة مميزة</p></div>
+            <div class="prices"><span class="price-pill"><small>Single</small>2.50 JD</span><span class="price-pill"><small>Double</small>3.50 JD</span><span class="price-pill"><small>Triple</small>4.50 JD</span></div></div>
+        </div>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-group-head"><h3>Buffalo Monster Burger</h3><span>بافلو مونستر برجر</span></div>
+        <div class="menu-items">
+          <div class="menu-item"><div class="info"><h4>Buffalo Monster Burger</h4><p>صلصة بافلو حارة وسخية</p></div>
+            <div class="prices"><span class="price-pill"><small>Single</small>2.50 JD</span><span class="price-pill"><small>Double</small>3.50 JD</span><span class="price-pill"><small>Triple</small>4.50 JD</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIDES -->
+    <div class="menu-panel" id="panel-sides">
+      <div class="menu-group">
+        <div class="menu-group-head"><h3>Sides & Beverages</h3><span>مقبلات ومشروبات</span></div>
+        <div class="menu-items">
+          <div class="menu-item"><div class="info"><h4>Fries</h4><p>بطاطا مقلية</p></div><div class="prices"><span class="price-pill">1.00 JD</span></div></div>
+          <div class="menu-item"><div class="info"><h4>Loaded Cheesy Fries</h4><p>بطاطا محملة بالجبنة والإضافات</p></div><div class="prices"><span class="price-pill">2.25 JD</span></div></div>
+          <div class="menu-item"><div class="info"><h4>Cheesy Fries</h4><p>بطاطا بصلصة الجبنة</p></div><div class="prices"><span class="price-pill">1.25 JD</span></div></div>
+          <div class="menu-item"><div class="info"><h4>Onion Rings</h4><p>حلقات بصل مقرمشة</p></div><div class="prices"><span class="price-pill">2.50 JD</span></div></div>
+          <div class="menu-item"><div class="info"><h4>Cheese Dip "S"</h4><p>صلصة جبنة - صغير</p></div><div class="prices"><span class="price-pill">0.60 JD</span></div></div>
+          <div class="menu-item"><div class="info"><h4>Cheese Dip "L"</h4><p>صلصة جبنة - كبير</p></div><div class="prices"><span class="price-pill">1.25 JD</span></div></div>
+          <div class="menu-item"><div class="info"><h4>Water</h4><p>مياه معدنية</p></div><div class="prices"><span class="price-pill">0.40 JD</span></div></div>
+          <div class="menu-item"><div class="info"><h4>Matrix</h4><p>مشروب غازي</p></div><div class="prices"><span class="price-pill">0.50 JD</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-poster">
+      <div class="section-head" style="margin-bottom:0;">
+        <div class="eyebrow">FULL MENU</div>
+        <h2 style="font-size:1.8rem;">شاهد المنيو الأصلي</h2>
+        <p>اضغط على الصورة لتكبيرها</p>
+      </div>
+      <div class="poster-grid">
+        <div class="poster-card" onclick="openLightbox('assets/menu/page-1.jpg')">
+          <img src="assets/menu/page-1.jpg" alt="منيو تشالنج برجر - صفحة برجر اللحم">
+          <div class="tag"><span>Beef Burgers</span><span>🔍</span></div>
+        </div>
+        <div class="poster-card" onclick="openLightbox('assets/menu/page-2.jpg')">
+          <img src="assets/menu/page-2.jpg" alt="منيو تشالنج برجر - صفحة برجر الدجاج والمقبلات">
+          <div class="tag"><span>Chicken & Sides</span><span>🔍</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANCHES -->
+<section class="branches" id="branches">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">OUR BRANCHES</div>
+      <h2>فروعنا في عمّان</h2>
+      <p>زورونا في أقرب فرع أو احصل على الاتجاهات مباشرة من خرائط جوجل</p>
+    </div>
+    <div class="branch-grid">
+
+      <div class="branch-card">
+        <div class="branch-map">
+          <iframe src="https://www.google.com/maps?q=31.9952273,35.8710914&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="خريطة فرع شارع المدينة المنورة"></iframe>
+        </div>
+        <div class="branch-body">
+          <div class="branch-kicker"><span class="dot"></span> مفتوح الآن</div>
+          <h3>فرع شارع المدينة المنورة</h3>
+          <p class="addr">📍 شارع المدينة المنورة، عمّان، الأردن</p>
+          <div class="branch-actions">
+            <a class="btn btn-primary btn-block" href="https://maps.app.goo.gl/yApWqEatAF9Yx6EZ7" target="_blank" rel="noopener">الحصول على الاتجاهات 🧭</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="branch-card">
+        <div class="branch-map">
+          <iframe src="https://www.google.com/maps?q=31.9744351,35.8476859&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="خريطة فرع شارع مكة"></iframe>
+        </div>
+        <div class="branch-body">
+          <div class="branch-kicker"><span class="dot"></span> مفتوح الآن</div>
+          <h3>فرع شارع مكة</h3>
+          <p class="addr">📍 شارع مكة، عمّان، الأردن</p>
+          <div class="branch-actions">
+            <a class="btn btn-primary btn-block" href="https://maps.app.goo.gl/Lawvwjo1yQrcsYGUA" target="_blank" rel="noopener">الحصول على الاتجاهات 🧭</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band" id="contact">
+  <div class="container">
+    <h2>جاهز تقبل التحدي؟ 🔥</h2>
+    <p>اطلب من أقرب فرع وجرّب أشهى برجر بعمّان</p>
+    <div class="hero-actions" style="justify-content:center;">
+      <a href="#menu" class="btn" style="background:#fff;color:var(--brand-dark);">شاهد المنيو</a>
+      <a href="#branches" class="btn btn-outline">فروعنا</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="assets/logo.jpg" alt="Challenge Burger">CHALLENGE BURGER</div>
+        <p>SIMPLE. TASTY. FRESH. — برجر لحم ودجاج طازج بوصفات جريئة، في خدمتكم بفروعنا بعمّان.</p>
+      </div>
+      <div>
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="#menu">المنيو</a></li>
+          <li><a href="#branches">الفروع</a></li>
+          <li><a href="#home">الرئيسية</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>الفروع</h4>
+        <ul>
+          <li><a href="https://maps.app.goo.gl/yApWqEatAF9Yx6EZ7" target="_blank" rel="noopener">📍 شارع المدينة المنورة</a></li>
+          <li><a href="https://maps.app.goo.gl/Lawvwjo1yQrcsYGUA" target="_blank" rel="noopener">📍 شارع مكة</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Challenge Burger. جميع الحقوق محفوظة.</span>
+      <span>Simple. Tasty. Fresh.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img id="lightboxImg" src="" alt="منيو Challenge Burger">
+</div>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
