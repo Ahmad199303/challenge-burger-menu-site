@@ -181,6 +181,61 @@ header{
 .promise-item p{color:var(--cream-dim);font-size:.92rem;}
 
 /* ---------- menu ---------- */
+/* ---------- game ---------- */
+.game{
+  background:
+    radial-gradient(circle at 15% 20%,rgba(232,94,58,.18),transparent 45%),
+    radial-gradient(circle at 85% 80%,rgba(242,183,5,.12),transparent 40%),
+    var(--ink-2);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+}
+.game-wrap{max-width:760px;margin:0 auto;}
+.game-hud{
+  display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;
+  margin-bottom:1.6rem;
+}
+.hud-chip{
+  background:var(--panel);border:1px solid var(--line);border-radius:100px;
+  padding:.65rem 1.3rem;font-weight:700;color:var(--cream-dim);font-size:.95rem;
+}
+.hud-chip strong{color:var(--brand-light);font-size:1.05rem;}
+.game-board{
+  position:relative;
+  height:380px;
+  border-radius:var(--radius);
+  border:2px dashed rgba(232,94,58,.35);
+  background:rgba(0,0,0,.2);
+  overflow:hidden;
+  display:flex;align-items:center;justify-content:center;
+}
+.game-hint{color:var(--cream-dim);font-weight:600;text-align:center;padding:0 1rem;}
+.mole{
+  position:absolute;width:66px;height:66px;border-radius:50%;
+  padding:0;border:none;cursor:pointer;background:transparent;
+  transform:translate(-50%,-50%) scale(0);
+  animation:mole-pop .22s ease forwards;
+  filter:drop-shadow(0 8px 16px rgba(0,0,0,.5));
+}
+.mole img{width:100%;height:100%;border-radius:50%;object-fit:cover;}
+.mole.hit{animation:mole-hit .25s ease forwards;pointer-events:none;}
+@keyframes mole-pop{to{transform:translate(-50%,-50%) scale(1);}}
+@keyframes mole-hit{to{transform:translate(-50%,-50%) scale(1.6);opacity:0;}}
+@media (max-width:600px){.game-board{height:320px;}.mole{width:54px;height:54px;}}
+
+.game-result{
+  position:fixed;inset:0;background:rgba(10,6,5,.85);
+  display:none;align-items:center;justify-content:center;z-index:210;padding:1.5rem;
+}
+.game-result.open{display:flex;}
+.game-result-card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:2.4rem 2rem;text-align:center;max-width:360px;width:100%;box-shadow:var(--shadow);
+}
+.game-result-card h3{font-size:1.6rem;margin-bottom:.6rem;color:var(--cream);}
+.game-result-card p{color:var(--cream-dim);margin-bottom:.5rem;}
+#gameResultScore{color:var(--brand-light);font-weight:800;font-size:1.6rem;}
+.game-result-card .btn{margin-top:1rem;}
+
 .menu{background:var(--ink);}
 .menu-tabs{display:flex;justify-content:center;gap:.8rem;flex-wrap:wrap;margin-bottom:3rem;}
 .menu-tab{

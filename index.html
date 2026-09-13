@@ -21,6 +21,7 @@
     <ul class="nav-links" id="navLinks">
       <li><a href="#home">الرئيسية</a></li>
       <li><a href="#menu">المنيو</a></li>
+      <li><a href="#game">🎮 لعبة</a></li>
       <li><a href="#branches">الفروع</a></li>
       <li><a href="#contact">تواصل معنا</a></li>
     </ul>
@@ -76,6 +77,38 @@
     <div class="promise-item">
       <div class="ic">⚡</div>
       <div><h3>خدمة سريعة</h3><p>طلبك جاهز بأسرع وقت دون التنازل عن الجودة.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GAME -->
+<section class="game" id="game">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">FOR FUN</div>
+      <h2>🎮 تحدي اضرب اللوجو</h2>
+      <p>جرّب سرعتك! اضرب أكبر عدد من شعارات تشالنج برجر المتطايرة قبل ما تختفي 😄</p>
+    </div>
+
+    <div class="game-wrap">
+      <div class="game-hud">
+        <div class="hud-chip">⭐ النقاط: <strong id="gameScore">0</strong></div>
+        <div class="hud-chip">⏱️ الوقت: <strong id="gameTime">30</strong></div>
+        <button class="btn btn-primary" id="gameStartBtn">ابدأ التحدي 🔥</button>
+      </div>
+
+      <div class="game-board" id="gameBoard">
+        <p class="game-hint" id="gameHint">اضغط "ابدأ التحدي" وجهّز إصبعك 👆</p>
+      </div>
+    </div>
+
+    <div class="game-result" id="gameResult">
+      <div class="game-result-card">
+        <h3 id="gameResultTitle">🏆 النتيجة</h3>
+        <p id="gameResultScore">0 نقطة</p>
+        <p id="gameResultMsg"></p>
+        <button class="btn btn-primary" id="gamePlayAgainBtn">العب مرة ثانية 🔁</button>
+      </div>
     </div>
   </div>
 </section>
