@@ -223,9 +223,10 @@ header{
 .menu-item .info p{color:var(--cream-dim);font-size:.85rem;}
 .menu-item .prices{display:flex;flex-direction:column;gap:.3rem;flex:none;text-align:end;margin-inline-start:.5rem;}
 .price-pill{
+  display:flex;align-items:baseline;gap:.7rem;justify-content:flex-end;
   font-weight:800;color:var(--brand-light);font-size:1rem;white-space:nowrap;
 }
-.price-pill small{color:var(--cream-dim);font-weight:600;font-size:.72rem;margin-inline-end:.3rem;}
+.price-pill small{color:var(--cream-dim);font-weight:600;font-size:.72rem;flex:none;}
 
 .menu-poster{
   margin-top:4rem;text-align:center;
